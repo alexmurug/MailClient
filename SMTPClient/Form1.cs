@@ -182,6 +182,8 @@ namespace SMTPClient
                 var enc = new ASCIIEncoding();
                 var data = enc.GetBytes("QUIT\r\n");
                 stream.Write(data, 0, data.Length);
+                reader = new StreamReader(stream);
+                listBox1.Items.Add(reader.ReadLine() + " | Data: " + DateTime.Now);
             }
 
             utilizatorBox.Enabled = true;
