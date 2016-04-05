@@ -166,7 +166,7 @@ namespace SMTPClient
                 var msg = reader.ReadLine();
                 if (msg != ".")
                 {
-                    listBox2.Items.Add("ID: " + msg[0] + " | Marimea: " + msg.Substring(2) + " de octeţi;");
+                    listBox2.Items.Add("ID: " + msg[0] + " | Mărimea: " + msg.Substring(2) + " de octeţi;");
                 }
                 else
                 {
